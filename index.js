@@ -8,11 +8,13 @@
  */
 function printArrayValues(array) {
   // YOUR CODE BELOW HERE //
-  
+  for(let i = 0; i <= array.length - 1; i++){
+    console.log(array[i])
   
   // YOUR CODE ABOVE HERE //
 }
 
+printArrayValues(myArray)
 
 
 
@@ -26,11 +28,12 @@ function printArrayValues(array) {
  */
 function printArrayValuesInReverse(array) {
   // YOUR CODE BELOW HERE //
+for(let i = array.length - 1; 1 > 0; 1--) {
 
-  
+  console.log(array[i])
   // YOUR CODE ABOVE HERE //
 }
-
+printArrayValuesInReverse(myArray)
 
 
 
@@ -41,11 +44,18 @@ function printArrayValuesInReverse(array) {
  */
 function getObjectKeys(object) {
   // YOUR CODE BELOW HERE //
+     let array = []
+
+     for(var key in object){
+
+       array.push(key)
+     }
      
+     console.log(array)
   
   // YOUR CODE ABOVE HERE //
 }
-
+getObjectKeys(myobj)
 
 
 
@@ -56,11 +66,13 @@ function getObjectKeys(object) {
  */
 function printObjectKeys(object) {
   // YOUR CODE BELOW HERE //
-  
+for(var key in object){
 
+  console.log(key)
+}
   // YOUR CODE ABOVE HERE //
 }
-
+printObjectKeys(myobj)
 
 
 
@@ -70,11 +82,11 @@ function printObjectKeys(object) {
  */
 function getObjectValues(object) {
   // YOUR CODE BELOW HERE //
-  
+  console.log(Object.values(object1));
   
   // YOUR CODE ABOVE HERE //
 }
-
+getObjectValues(object1)
 
 
 
@@ -87,8 +99,10 @@ function getObjectValues(object) {
  */
 function printObjectValues(object) {
   // YOUR CODE BELOW HERE //
+console.log(object.printObjectValues(person))
 
-  
+  var myArray = Object.values(person);
   // YOUR CODE ABOVE HERE //
 }
 
+var person = {name:"sydney", age:14, city:"New orleans"};
